@@ -18,12 +18,12 @@ sudo chmod +x /usr/local/bin/docker-compose
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
 
-# Criar diretório para o n8n e TypeBot
+# Criar diretório para o n8n
 mkdir -p /home/ubuntu/n8n
 cd /home/ubuntu/n8n
 
-# Criar um arquivo docker-compose.yml para n8n e TypeBot
-cat <<EOF > docker-compose.yml
+# Criar um arquivo docker-compose.yml para n8n
+cat <<EOF > docker-compose-n8n.yml
 version: '3'
 services:
   n8n:
@@ -38,6 +38,18 @@ services:
       - n8n_data:/root/.n8n
     restart: always
 
+volumes:
+  n8n_data:
+EOF
+
+# Criar diretório para o TypeBot
+mkdir -p /home/ubuntu/typebot
+cd /home/ubuntu/typebot
+
+# Criar um arquivo docker-compose.yml para TypeBot
+cat <<EOF > docker-compose-typebot.yml
+version: '3'
+services:
   typebot:
     image: typebot/typebot
     container_name: typebot
@@ -46,13 +58,15 @@ services:
     environment:
       - NODE_ENV=production
     restart: always
-
-volumes:
-  n8n_data:
 EOF
 
-# Iniciar Docker Compose
-sudo docker-compose up -d
+# Iniciar Docker Compose para n8n
+cd /home/ubuntu/n8n
+sudo docker-compose -f docker-compose-n8n.yml up -d
+
+# Iniciar Docker Compose para TypeBot
+cd /home/ubuntu/typebot
+sudo docker-compose -f docker-compose-typebot.yml up -d
 
 # Adicionar swap
 sudo dd if=/dev/zero of=/swapfile bs=128M count=32
