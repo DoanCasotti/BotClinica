@@ -27,3 +27,10 @@ O projeto configura uma instância EC2 na AWS com o Terraform. Inclui um script 
    ```bash
    git clone https://github.com/DoanCasotti/BotClinica.git
    cd BotClinica
+
+2. **Comandos Terraforms**   
+   ```bash
+   terraform init
+   terraform plan
+   terraform apply
+   terraform destroy
