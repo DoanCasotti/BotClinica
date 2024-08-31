@@ -15,3 +15,17 @@ Este projeto contém arquivos de configuração para Terraform e um script de Us
    ```bash
    git clone https://github.com/DoanCasotti/BotClinica.git
    cd BotClinica
+
+2. Configure o Terraform:
+bash
+
+terraform init
+terraform plan
+terraform apply
+Uso
+Descreva como usar a configuração e o que cada arquivo faz.
+
+Licença
+Adicione informações sobre a licença do projeto, se aplicável.
+
+Se precisar de mais ajuda com qualquer outra coisa, sinta-se à vontade para perguntar!
