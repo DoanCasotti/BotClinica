@@ -17,8 +17,8 @@ Este projeto contém arquivos de configuração para Terraform e um script de Us
    cd BotClinica
 
 2. Configure o Terraform:
-bash
 
+```bash
 terraform init
 terraform plan
 terraform apply
