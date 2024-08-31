@@ -23,10 +23,10 @@ terraform init
 terraform plan
 terraform apply
 
-Uso
+3. Uso:
 Descreva como usar a configuração e o que cada arquivo faz.
 
-Licença
+4. Licença:
 Adicione informações sobre a licença do projeto, se aplicável.
 
 Se precisar de mais ajuda com qualquer outra coisa, sinta-se à vontade para perguntar!
