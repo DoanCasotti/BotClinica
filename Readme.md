@@ -22,6 +22,7 @@ bash
 terraform init
 terraform plan
 terraform apply
+
 Uso
 Descreva como usar a configuração e o que cada arquivo faz.
 
