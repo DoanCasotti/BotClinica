@@ -19,6 +19,12 @@ Este projeto contém arquivos de configuração para Terraform e um script de Us
 2. Configure o Terraform:
 
 ```bash
-terraform init
-terraform plan
-terraform apply
+   terraform init
+   terraform plan
+   terraform apply
+
+3. Uso:
+
+4. Licença:
+
+Se precisar de mais ajuda com qualquer outra coisa, sinta-se à vontade para perguntar!
