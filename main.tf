@@ -14,3 +14,4 @@ resource "aws_instance" "typebot_n8n" {
     Name = "TypeBot-n8n"
   }
 }
+# Alteração
