@@ -22,11 +22,3 @@ Este projeto contém arquivos de configuração para Terraform e um script de Us
 terraform init
 terraform plan
 terraform apply
-
-3. Uso:
-Descreva como usar a configuração e o que cada arquivo faz.
-
-4. Licença:
-Adicione informações sobre a licença do projeto, se aplicável.
-
-Se precisar de mais ajuda com qualquer outra coisa, sinta-se à vontade para perguntar!
